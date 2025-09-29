@@ -1,8 +1,10 @@
 import GoogleMapReact from 'google-map-react';
 
-
-const Marker = ({className}) => (
-  <i className={`fa-solid fa-map-pin text-red-400  ${className} style={{ fontSize: '24px' }}` }></i>
+const Marker = ({ className }) => (
+  <i
+    className={`fa-solid fa-map-pin text-red-400 ${className}`}
+    style={{ fontSize: '24px' }}
+  ></i>
 );
 
 function MyMap() {
@@ -12,14 +14,13 @@ function MyMap() {
   };
 
   return (
-    <div style={{ height: '100%', width: '100%' }}>
+    <div style={{ height: '500px', width: '100%' }}>
       <GoogleMapReact
         bootstrapURLKeys={{ key: import.meta.env.VITE_API_KEY }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >
-     
-        <Marker lat={45.5048} lng={-73.5772} className="text-4xl"/>
+        <Marker lat={45.5048} lng={-73.5772} className="text-4xl" />
       </GoogleMapReact>
     </div>
   );
