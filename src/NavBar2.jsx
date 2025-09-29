@@ -62,7 +62,7 @@ const Navbar = () => {
             YouTube
           </a>
           <a
-            href="https://www.linkedin.com/in/salim-v-brahimy-p-eng-ph-d-4362221/"
+            href="https://www.linkedin.com/company/mhef/?originalSubdomain=ca"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center text-red-600 hover:text-red-400 text-[16px]"
