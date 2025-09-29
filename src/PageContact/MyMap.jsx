@@ -1,0 +1,28 @@
+import GoogleMapReact from 'google-map-react';
+
+
+const Marker = ({className}) => (
+  <i className={`fa-solid fa-map-pin text-red-400  ${className} style={{ fontSize: '24px' }}` }></i>
+);
+
+function MyMap() {
+  const defaultProps = {
+    center: { lat: 45.5048, lng: -73.5772 },
+    zoom: 11,
+  };
+
+  return (
+    <div style={{ height: '100%', width: '100%' }}>
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: import.meta.env.VITE_API_KEY }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
+      >
+     
+        <Marker lat={45.5048} lng={-73.5772} className="text-4xl"/>
+      </GoogleMapReact>
+    </div>
+  );
+}
+
+export default MyMap;
