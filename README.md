@@ -1,12 +1,24 @@
-# React + Vite
+# MHEF Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for the **MHEF Research Group Website**, built with **React** and **Vite**. The website showcases our research capabilities, labs, virtual labs, and projects in materials science and hydrogen-related research.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Labs Section**: Microstructure observation, mechanical testing, and Thermal Desorption Spectroscopy (TDS).  
+- **Virtual Labs Section**: Multiscale modeling and characterization (MD, VASP, FEA simulations).  
+- **Machine Learning Tools**: Computer-vision-based phase analysis and image processing.  
+- Responsive, modern React frontend built with Vite.  
+- Easy-to-expand structure for new research items and pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **Frontend**: React + Vite  
+- **Styling**: Tailwind CSS  
+- **Routing**: React Router  
+- **Build Tool**: Vite  
+- **Optional Backend**: FastAPI (if needed for API endpoints)
+
