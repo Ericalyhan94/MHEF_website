@@ -20,5 +20,5 @@ This repository contains the source code for the **MHEF Research Group Website**
 - **Styling**: Tailwind CSS  
 - **Routing**: React Router  
 - **Build Tool**: Vite  
-- **Optional Backend**: FastAPI (if needed for API endpoints)
+
 
