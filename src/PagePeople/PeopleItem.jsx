@@ -31,7 +31,7 @@ const PeopleItem = ({ professor }) => {
         )}
 		  {professor.PhD_research_topic && (
           <>
-            <div className="text-sm text-stone-700 mt-2">PhD research topic:</div>
+            <div className="text-sm text-stone-700 mt-2">PhD Research Topic:</div>
             <div className="text-sm text-stone-500">{professor.PhD_research_topic}</div>
           </>
         )}
