@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import labPhoto1 from './assets/lab_photo1.jpg';
 import labPhoto2 from './assets/lab_photo2.jpg';
 import labPhoto3 from './assets/lab_photo3.jpg';
@@ -26,6 +26,7 @@ const companyLogos = [
 
 const HomePage = () => {
   const picRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(null); // 控制哪个文字框放大
 
   const scrollToRef = (ref) => ref.current.scrollIntoView({ behavior: "smooth" });
 
@@ -95,7 +96,18 @@ const HomePage = () => {
               index % 2 === 0 ? 'justify-end' : 'justify-start'
             } p-4`}
           >
-            <div className="shadow-lg text-black text-sm md:text-xl font-lato font-medium max-w-[400px] bg-[rgba(245,245,245,0.8)] p-4 space-y-2">
+            <div
+              className={`
+                shadow-lg text-black text-sm md:text-xl font-lato font-medium max-w-[400px] 
+                bg-[rgba(245,245,245,0.8)] p-4 space-y-2
+                transform transition-transform duration-300
+                ${activeIndex === index ? 'scale-110 z-50' : 'scale-100'}
+                cursor-pointer
+              `}
+              onClick={() =>
+                setActiveIndex(activeIndex === index ? null : index)
+              }
+            >
               {section.paragraphs.map((para, idx) => (
                 <p key={idx}>{para}</p>
               ))}
