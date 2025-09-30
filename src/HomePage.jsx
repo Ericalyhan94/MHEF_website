@@ -26,9 +26,13 @@ const companyLogos = [
 
 const HomePage = () => {
   const picRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(null); // 控制哪个文字框放大
+  const [activeIndex, setActiveIndex] = useState(null);
 
-  const scrollToRef = (ref) => ref.current.scrollIntoView({ behavior: "smooth" });
+  const scrollToRef = (ref) => {
+    const yOffset = -100; // 偏移量避免被 Hero section 遮挡
+    const y = ref.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  };
 
   const labSections = [
     {
@@ -88,7 +92,7 @@ const HomePage = () => {
           <img
             className="w-screen h-screen object-cover"
             src={section.photo}
-            ref={index === 0 ? picRef : null}
+            ref={index === 1 ? picRef : null} // 第二段作为滚动目标
             alt={`Lab photo ${index + 1}`}
           />
           <div
@@ -103,6 +107,7 @@ const HomePage = () => {
                 transform transition-transform duration-300
                 ${activeIndex === index ? 'scale-110 z-50' : 'scale-100'}
                 cursor-pointer
+                mt-64 md:mt-0  // 手机端大幅下移，桌面端保持原位
               `}
               onClick={() =>
                 setActiveIndex(activeIndex === index ? null : index)
