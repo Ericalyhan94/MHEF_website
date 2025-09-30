@@ -17,7 +17,7 @@ const PageContact = () => {
       {/* 联系信息 + 地图 */}
       <div className="flex flex-col-reverse md:flex-row justify-between p-12 gap-8">
         {/* 联系信息 */}
-        <div className="flex flex-col text-5xl font-lato text-red-600 p-8 max-w-lg">
+        <div className="flex flex-col text-3xl font-lato text-red-600 p-8 max-w-lg">
           <h2>Contact us：</h2>
 
           <div className="mt-4 text-2xl text-black font-lato space-y-1">
