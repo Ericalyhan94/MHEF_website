@@ -6,7 +6,8 @@ const ResearchAssociate = [
     image: Evelin,
     degree1: "Ph.D., Instituto Tecnológico de Aeronáutica, Brazil",
     degree2: "M.Eng, Faculdade de Engenharia Industrial, Brazil",
-    research_area: "Microstructure Analysis, Coatings, and Mechanical Degradation of Materials",
+    research_area: "Hydrogen Embrittlement, Cold-Spray, Data Science, Machine Learning, Microstructure Analysis, Coatings"
+	
   }
 ];
 
