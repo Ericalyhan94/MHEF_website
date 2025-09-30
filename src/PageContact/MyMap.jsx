@@ -1,15 +1,16 @@
-import GoogleMapReact from 'google-map-react';
+// MyMap.js
+import GoogleMapReact from "google-map-react";
 
- 
+// Marker 组件
 const Marker = ({ className }) => (
   <i
     className={`fa-solid fa-map-pin text-red-400 ${className}`}
-    style={{ fontSize: '24px' }}
+    style={{ fontSize: "24px" }}
   ></i>
 );
 
 function MyMap() {
-  console.log('Google Maps API Key:', import.meta.env.VITE_API_KEY);
+  console.log("Google Maps API Key:", import.meta.env.VITE_API_KEY);
 
   const defaultProps = {
     center: { lat: 45.5048, lng: -73.5772 },
@@ -17,26 +18,14 @@ function MyMap() {
   };
 
   return (
- 
-    <div style={{ margin: '20px' }}>
- 
-      <div
-        style={{
-          height: '500px',
-          width: '100%',
-          borderRadius: '12px',
-          overflow: 'hidden',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-        }}
+    <div className="w-full h-full">
+      <GoogleMapReact
+        bootstrapURLKeys={{ key: import.meta.env.VITE_API_KEY }}
+        defaultCenter={defaultProps.center}
+        defaultZoom={defaultProps.zoom}
       >
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: import.meta.env.VITE_API_KEY }}
-          defaultCenter={defaultProps.center}
-          defaultZoom={defaultProps.zoom}
-        >
-          <Marker lat={45.5048} lng={-73.5772} className="text-4xl" />
-        </GoogleMapReact>
-      </div>
+        <Marker lat={45.5048} lng={-73.5772} />
+      </GoogleMapReact>
     </div>
   );
 }
