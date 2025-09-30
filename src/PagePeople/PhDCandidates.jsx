@@ -18,8 +18,8 @@ const PhDCandidates = [
         name: "Xu Zheng",
         image:  Xu ,
 		degree1:"M.Eng, McGill University, Canada",
-		research_area: "Hydrogen Embrittlement, Hydrogen Embrittlement in Casting Steel",
-		PhD_research_topic:"Effect of Nb Addition on Hydrogen Embrittlement Behavior of Cast Steels"
+		research_area: "Hydrogen Embrittlement, Hydrogen Embrittlement in Casing Steel",
+		PhD_research_topic:"Effect of Nb Addition on Hydrogen Embrittlement Behavior of Casing Steels"
     },
 
     {
