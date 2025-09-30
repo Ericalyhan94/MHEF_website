@@ -4,8 +4,8 @@ const ResearchAssociate = [
   {
     name: "Dr. Evelin Barbosa de Melo",
     image: Evelin,
-    degree1: "Doctor of Science (D.Sc.) Instituto Tecnológico de Aeronáutica - ITA, Brazil",
-    degree2: "FEI - Faculdade de Engenharia Industrial, Brazil",
+    degree1: "Ph.D., Instituto Tecnológico de Aeronáutica, Brazil",
+    degree2: "M.Eng, Faculdade de Engenharia Industrial, Brazil",
     research_area: "Microstructure Analysis, Coatings, and Mechanical Degradation of Materials",
   }
 ];

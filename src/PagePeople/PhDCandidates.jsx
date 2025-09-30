@@ -7,8 +7,9 @@ const PhDCandidates = [
     id: 1,
     name: "Manoj Arthanari",
     image: Manoj,
-	degree1:"MEng, PSG College of Technology, India",
-    research_area: "Hydrogen Embrittlement, Failure Analysis, Metallurgy, Materials Testing"
+	degree1:"M.Eng, PSG College of Technology, India",
+    research_area: "Hydrogen Embrittlement, Failure Analysis, Metallurgy, Materials Testing",
+	PhD_research_topic:"Investigating the Hydrogen Embrittlement Susceptibility of Lower Bainite and Tempered Martensite Microstructures in Medium-Carbon Alloy Steels"
 	},
 	
  
@@ -16,17 +17,18 @@ const PhDCandidates = [
 		id: 2,
         name: "Xu Zheng",
         image:  Xu ,
-		degree1:"Master of Philosophy, McGill University, Canada",
-		research_area: "Hydrogen Embrittlement, Hydrogen Embrittlement in Aluminum Alloys, Failure Analysis "
+		degree1:"M.Eng, McGill University, Canada",
+		research_area: "Hydrogen Embrittlement, Hydrogen Embrittlement in Casting Steel",
+		PhD_research_topic:"Effect of Nb Addition on Hydrogen Embrittlement Behavior of Cast Steels"
     },
 
     {
 		id: 3,
         name: "Sidharth Sarmah",
         image: Sid ,
-		degree1:"Master of Technology, Indian Institute of Technology Gandhinagar, India",
-		research_area: "Finite Element Analysis (FEA) of Hydrogen Embrittlement in Steels, Computational Mechanical Properties of Metals:"
-
+		degree1:"M.Eng, Indian Institute of Technology Gandhinagar, India",
+		research_area: "Finite Element Analysis (FEA) of Hydrogen Embrittlement in Steels, Computational Mechanical Properties of Metals",
+		PhD_research_topic:"Finite Element Analysis (FEA) of Hydrogen Embrittlement in Steels"
     },
 
 ];
