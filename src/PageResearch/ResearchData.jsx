@@ -57,7 +57,7 @@ const ResearchData = [
   },
         {
     id: 7,
-    title: "Molecular dynamics (MD) simulations",
+    title: "Molecular Dynamics (MD) Simulations",
     description:
       "We perform MD simulations to study hydrogen diffusion, its impact on the mechanical properties of metals, and to capture the material’s transition from ductile to brittle behavior.",
     image: model2,
