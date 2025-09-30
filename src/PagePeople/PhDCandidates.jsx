@@ -27,7 +27,7 @@ const PhDCandidates = [
         name: "Sidharth Sarmah",
         image: Sid ,
 		degree1:"M.Eng, Indian Institute of Technology Gandhinagar, India",
-		research_area: "Finite Element Analysis (FEA) of Hydrogen Embrittlement in Steels, Computational Mechanical Properties of Metals",
+		research_area: "Multi-scale Modeling of Hydrogen-Induced Failure in High-Strength Steels",
 		PhD_research_topic:"Finite Element Analysis (FEA) of Hydrogen Embrittlement in Steels"
     },
 
