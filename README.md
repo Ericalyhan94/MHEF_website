@@ -1,4 +1,4 @@
-# MHEF Website
+# MHEF Website: https://mhef-website.vercel.app/
 
 This repository contains the source code for the **MHEF Research Group Website**, built with **React** and **Vite**. The website showcases our research capabilities, labs, virtual labs, and projects in materials science and hydrogen-related research.
 
